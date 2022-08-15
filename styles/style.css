@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+
+}
+
+#slider {
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide.current {
+    z-index: 1
+}
+
+.slide1 {
+    background: url('../images/image1.jpg') center/cover;
+}
+
+.slide2 {
+    background: url('../images/image2.jpg') center/cover;
+}
+
+.slide3 {
+    background: url('../images/image3.jpg') center/cover;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 100px;
+}
+
+
+/* Option1: 'less than' and 'greater than' arrows */
+/* 
+.arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    color: #ffffff;
+    font-size: 100px;
+    cursor: pointer;
+}
+.arrow:hover {
+    border-radius: 45%;
+    border: solid 3px #ffffff;
+}
+#arrow-left {
+    left: 30px;
+}
+#arrow-right {
+    right: 30px;
+}  
+*/
+
+
+/* Option2: 'border' arrows */
+.arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    cursor: pointer;
+    margin-top: 30px;
+    border-style: solid;
+}
+.arrow:hover {
+    border-color: #222222;
+}
+#arrow-left {
+    left: 30px;
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+#arrow-right {
+    right: 30px;
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #ffffff;
+}
